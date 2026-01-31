@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Result Portal</h2>
+        
+        <div class="input-sec">
+            <input type="text" id="roll-input" placeholder="Enter Roll Number (S-001 to S-005)">
+            <button onclick="searchStudent()">Search Result</button>
+        </div>
+
+        <div id="result">
+            <div class="student" id="student-header"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Obtained</th>
+                        <th>Max Marks</th>
+                        <th>Percentage</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+
+            <div class="summary" id="summary"></div>
+        </div>
+    </div>
+    <script src="add.js"></script>
+</body>
+</html>
